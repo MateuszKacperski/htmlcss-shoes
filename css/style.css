@@ -6,6 +6,9 @@
 }
 
 /*general*/
+html{
+    overflow: scroll;
+}
 
 body{
     font-family: 'Rubik Mono One', sans-serif;
@@ -38,8 +41,6 @@ h1{
     position: relative;
 }
 
-
-
 .card{
     height: 200px;
     width: 500px;
@@ -51,14 +52,15 @@ h1{
 }
 
 .menu{
-    display: flex;
-    flex-direction: row;
     position: fixed;
-
+    top:-6%;
+    right: 6%;
+    
 }
 
 .menu ul{
     list-style: none;
+    transform: rotate(90deg);
 }
 
 
@@ -72,7 +74,9 @@ h1{
     background-color: white;
     display: inline-block;
     text-align: center;
-    
+    margin: 15px;
+    transform: rotate(-90deg);
+    color: black;
 }
 
 
